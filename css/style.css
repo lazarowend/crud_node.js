@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100%;
+    max-width: 600px;
+    background-color: rgb(177, 177, 177);
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.box form {
+    padding: 40px 20px;
+}
+
+.box form input {
+    display: block;
+    padding: 10px;
+    width: 90%;
+    margin: 10px auto;
+}
+
+img {
+    width: 24px;
+    height: 24px;
+}

@@ -1,0 +1,38 @@
+<div class="container mt-3">
+        <div class="text-center">
+        <h2>CRUD COM NODE</h2>
+            <p>Aqui estão nossos usuários</p>
+        </div>          
+            <div class="d-flex justify-content-end">
+                <a href="/inserir" class="btn btn-info m-2 ">ADD</a>
+            </div>
+            <table class="table table-dark table-bordered">
+            <thead>
+                <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Nascimento</th>
+                <th class="bg-danger text-center">Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+            {{#dados}}
+            <tr>
+                    <td>{{id}}</td>
+                    <td>{{nome}}</td>
+                    <td>{{email}}</td>
+                    <td>{{telefone}}</td>
+                    <td>{{nascimento}}</td>
+                    <td class="bg-danger">
+                        <div class="d-flex justify-content-around">
+                        <a href="/update/{{id}}"><img src="/img/editar-texto.png" alt=""></a>
+                        <a onclick="verificar({{id}})"><img src="/img/recycle-bin.png" alt=""></a>
+                        </div>
+                    </td>
+            </tr>
+            {{/dados}}
+          </tbody>
+    </table>
+</div>
